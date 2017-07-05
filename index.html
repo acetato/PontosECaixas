@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    
+    <title>Dots and Boxes</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>
+        <span class="text_effect"> Dots and Boxes</span>
+      </h1>
+    </div>
+    
+    <div id="main">
+      <div id="outer">
+        <div id="content">
+          
+          <div id="login">
+            <label><b>Login:</b></label>
+            <br>
+            <form>
+              <input required type="text" placeholder="Username" id="input_name" pattern="[A-Za-z0-9]{5,15}"/>
+              <input required type="password" placeholder="Password" id="input_password" pattern="[A-Za-z0-9]{5,15}"/>
+            </form>
+            <input type="button" value="Login" class="button" id="login_button" onclick="login()"/>
+            
+          </div>
+          
+          <div id="menu">
+            <div id="select_mode">
+              <label><b>Mode:</b></label>
+              <form>
+                <input type="radio" name="mode" value="online" id="online" checked="checked"> Online<br>
+                <input type="radio" name="mode" value="offline" id="offline" onclick="showRightHighScore()"> Offline<br>
+              </form>
+            </div>
+            
+            <div id="select_table">
+              <label><b>Table:</b></label>
+              <br>
+              <input type="radio" id="select_beginner" name="mode" value="beginner" checked="checked" onclick="updateTable(5,7)"> Beginner: 2x3<br>
+              <input type="radio" id="select_intermediate" name="mode" value="intermediate" onclick="updateTable(9,11)"> Intermediate: 4x5<br>
+              <input type="radio" id="select_advanced" name="mode" value="advanced" onclick="updateTable(13,31)"> Advanced: 6x8<br>
+              <input type="radio" id="select_expert" name="mode" value="expert" onclick="updateTable(19,43)"> Expert: 9x11<br>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div id="other_options">
+          <input id="startGameButton" type="button" class="button" onClick="newGame()" value="New Game" disabled>
+          <input id="giveUpButton" type="button" class="button" onClick="giveUp()" value="Give Up" disabled>
+        </div>
+        
+        <div id="game_details">
+          <table id="details">
+            <thead>
+              <tr>
+                <td> &nbsp; </td>
+                <td class="t_players" id="player1"> Player1 </td>
+                <td> &nbsp; </td>
+                <td class="t_players" id="player2"> Player2 </td>
+                <td> &nbsp; </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> Score </td>
+                <td class="t_players" id="score_player1"> 0 </td>
+                <td> &nbsp; </td>
+                <td class="t_players" id="score_player2"> 0 </td>
+                <td> &nbsp; </td>
+              </tr>
+              <tr>
+                <td> Timer </td>
+                <td class="t_players" id="timer_player1"> 00:00 </td>
+                <td> &nbsp; </td>
+                <td class="t_players" id="timer_player2"> 00:00 </td>
+                <td> &nbsp; </td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+        
+      </div>
+      
+      <div id="top_five">
+        <label><b>Top 5</b></label>
+        <br/>
+        <table id="table_top">
+        </table>
+      </div>
+    </div>
+    <br><br><br><br>
+    <div id="game">
+      <table id="game_table"></table>
+    </div>        
+  </body>
+</html>

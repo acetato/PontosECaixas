@@ -1,0 +1,155 @@
+body {
+    background-color: lightblue;
+}
+
+.button {
+    width:104px;
+}
+
+div#outer{
+    text-align: center;
+    border: solid black;
+    border-radius: 5px;
+    position: relative;
+    top: 10%;
+    width: 600px;
+    margin-left: auto;
+    margin-right: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:white;
+            
+}
+
+div#top_five {
+    margin-right: auto;
+    border: solid black;
+    border-radius: 5px;
+    float: left;
+    height: 220px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color:white;
+
+}
+
+
+table#table_top {
+    border-radius: 5px;
+    width: 250px;
+
+}
+
+
+
+div#main{
+    display: flex;
+}
+ 
+div#content{
+    position: relative;
+    width: 600px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+ 
+div#login{
+    float:left;
+    width:33%;
+}
+ 
+div#select_mode{
+    float:left;
+    width:33%;
+}
+ 
+div#select_table{
+    float:left;
+    width:33%;
+}
+ 
+div#other_options{
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+#game_table {
+    margin: auto;
+    border: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:white;
+}
+
+#header {
+    text-align: center;
+    height:60px;
+    font-size:20px;
+}
+ 
+ 
+#game_table td{
+    border-spacing: 0 0;
+}
+ 
+.line_player1 {
+    background-color: blue;
+}
+ 
+.line_player2 {
+    background-color: red;
+}
+ 
+.line:hover{
+    background-color: blue;
+}
+
+#player1_turn {
+    background-color: blue;
+}
+
+#player2_turn {
+    background-color: red;
+}
+ 
+#details {
+    text-align: center;
+    border: solid black;
+    border-radius: 5px;
+    position: relative;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ 
+#player1 {
+    color: blue;
+}
+ 
+#player2 {
+    color: red;
+}
+
+#input_name:invalid{
+    background-color: pink;
+    outline: 2px solid red;
+}
+
+#input_password:invalid{
+    background-color: pink;
+    outline: 2px solid red;
+}
+
+ 
+#waitingAnimation {
+    display:block;
+    margin: auto;
+    
+}
